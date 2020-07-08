@@ -1,0 +1,704 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E1D82912435C987006BF711 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1D82902435C987006BF711 /* Common.swift */; };
+		1E5EF7A72434BBEF00E971AE /* SleepListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5EF7A62434BBEF00E971AE /* SleepListController.swift */; };
+		1E62C685240586D300B24EFF /* running-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E62C67F240586D200B24EFF /* running-icon.png */; };
+		1E62C686240586D300B24EFF /* yoga-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E62C680240586D200B24EFF /* yoga-icon.png */; };
+		1E62C687240586D300B24EFF /* cycling-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E62C681240586D300B24EFF /* cycling-icon.png */; };
+		1E62C688240586D300B24EFF /* other-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E62C682240586D300B24EFF /* other-icon.png */; };
+		1E62C689240586D300B24EFF /* walking-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E62C683240586D300B24EFF /* walking-icon.png */; };
+		1E62C68A240586D300B24EFF /* pool-swim-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E62C684240586D300B24EFF /* pool-swim-icon.png */; };
+		1E62C68D24059F5100B24EFF /* strava-done.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E62C68B24059F5100B24EFF /* strava-done.png */; };
+		1E62C68E24059F5100B24EFF /* strava-pending.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E62C68C24059F5100B24EFF /* strava-pending.png */; };
+		1E6B5ACF24099C2B00299DE6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6B5ACE24099C2B00299DE6 /* Constants.swift */; };
+		1EB53EC7241F746400E0E5AD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB53EC6241F746400E0E5AD /* MainViewController.swift */; };
+		1EBD51AD240710A00056A254 /* Http.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBD51AC240710A00056A254 /* Http.swift */; };
+		1EBF41B423FC696700CA569A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBF41B323FC696700CA569A /* AppDelegate.swift */; };
+		1EBF41B623FC696700CA569A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBF41B523FC696700CA569A /* SceneDelegate.swift */; };
+		1EBF41B823FC696700CA569A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBF41B723FC696700CA569A /* ViewController.swift */; };
+		1EBF41BB23FC696700CA569A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EBF41B923FC696700CA569A /* Main.storyboard */; };
+		1EBF41BD23FC696800CA569A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EBF41BC23FC696800CA569A /* Assets.xcassets */; };
+		1EBF41C023FC696800CA569A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EBF41BE23FC696800CA569A /* LaunchScreen.storyboard */; };
+		1EBF41CB23FC696800CA569A /* Workout_To_Strava_BridgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBF41CA23FC696800CA569A /* Workout_To_Strava_BridgeTests.swift */; };
+		1EBF41D623FC696800CA569A /* Workout_To_Strava_BridgeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBF41D523FC696800CA569A /* Workout_To_Strava_BridgeUITests.swift */; };
+		1EBF41E423FC6A1C00CA569A /* HealthKitSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBF41E323FC6A1C00CA569A /* HealthKitSetup.swift */; };
+		1EBF41E823FC6AA800CA569A /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EBF41E723FC6AA800CA569A /* HealthKit.framework */; };
+		1EBF41EA23FC7F3E00CA569A /* WorkoutDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBF41E923FC7F3E00CA569A /* WorkoutDataStore.swift */; };
+		1EBF41ED23FF226300CA569A /* CoreGPX in Frameworks */ = {isa = PBXBuildFile; productRef = 1EBF41EC23FF226300CA569A /* CoreGPX */; };
+		1EC4410824046460002F3444 /* ActivityUploadController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC4410724046460002F3444 /* ActivityUploadController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1EBF41C723FC696800CA569A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1EBF41A823FC696700CA569A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EBF41AF23FC696700CA569A;
+			remoteInfo = "Workout To Strava Bridge";
+		};
+		1EBF41D223FC696800CA569A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1EBF41A823FC696700CA569A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EBF41AF23FC696700CA569A;
+			remoteInfo = "Workout To Strava Bridge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1E1D82902435C987006BF711 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		1E5EF7A62434BBEF00E971AE /* SleepListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepListController.swift; sourceTree = "<group>"; };
+		1E62C67F240586D200B24EFF /* running-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "running-icon.png"; path = "Assets.xcassets/running-icon.png"; sourceTree = "<group>"; };
+		1E62C680240586D200B24EFF /* yoga-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "yoga-icon.png"; path = "Assets.xcassets/yoga-icon.png"; sourceTree = "<group>"; };
+		1E62C681240586D300B24EFF /* cycling-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cycling-icon.png"; path = "Assets.xcassets/cycling-icon.png"; sourceTree = "<group>"; };
+		1E62C682240586D300B24EFF /* other-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "other-icon.png"; path = "Assets.xcassets/other-icon.png"; sourceTree = "<group>"; };
+		1E62C683240586D300B24EFF /* walking-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "walking-icon.png"; path = "Assets.xcassets/walking-icon.png"; sourceTree = "<group>"; };
+		1E62C684240586D300B24EFF /* pool-swim-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pool-swim-icon.png"; path = "Assets.xcassets/pool-swim-icon.png"; sourceTree = "<group>"; };
+		1E62C68B24059F5100B24EFF /* strava-done.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "strava-done.png"; path = "Assets.xcassets/strava-done.png"; sourceTree = "<group>"; };
+		1E62C68C24059F5100B24EFF /* strava-pending.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "strava-pending.png"; path = "Assets.xcassets/strava-pending.png"; sourceTree = "<group>"; };
+		1E6B5ACE24099C2B00299DE6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1EB53EC6241F746400E0E5AD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1EBD51AC240710A00056A254 /* Http.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Http.swift; sourceTree = "<group>"; };
+		1EBF41B023FC696700CA569A /* Workout Strava Bridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Workout Strava Bridge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EBF41B323FC696700CA569A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1EBF41B523FC696700CA569A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1EBF41B723FC696700CA569A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1EBF41BA23FC696700CA569A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1EBF41BC23FC696800CA569A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1EBF41BF23FC696800CA569A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1EBF41C123FC696800CA569A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EBF41C623FC696800CA569A /* Workout To Strava BridgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Workout To Strava BridgeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EBF41CA23FC696800CA569A /* Workout_To_Strava_BridgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout_To_Strava_BridgeTests.swift; sourceTree = "<group>"; };
+		1EBF41CC23FC696800CA569A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EBF41D123FC696800CA569A /* Workout To Strava BridgeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Workout To Strava BridgeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EBF41D523FC696800CA569A /* Workout_To_Strava_BridgeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout_To_Strava_BridgeUITests.swift; sourceTree = "<group>"; };
+		1EBF41D723FC696800CA569A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EBF41E323FC6A1C00CA569A /* HealthKitSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitSetup.swift; sourceTree = "<group>"; };
+		1EBF41E523FC6AA800CA569A /* Workout To Strava Bridge.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Workout To Strava Bridge.entitlements"; sourceTree = "<group>"; };
+		1EBF41E723FC6AA800CA569A /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		1EBF41E923FC7F3E00CA569A /* WorkoutDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDataStore.swift; sourceTree = "<group>"; };
+		1EC4410724046460002F3444 /* ActivityUploadController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityUploadController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1EBF41AD23FC696700CA569A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EBF41E823FC6AA800CA569A /* HealthKit.framework in Frameworks */,
+				1EBF41ED23FF226300CA569A /* CoreGPX in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EBF41C323FC696800CA569A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EBF41CE23FC696800CA569A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EBF41A723FC696700CA569A = {
+			isa = PBXGroup;
+			children = (
+				1EBF41B223FC696700CA569A /* Workout To Strava Bridge */,
+				1EBF41C923FC696800CA569A /* Workout To Strava BridgeTests */,
+				1EBF41D423FC696800CA569A /* Workout To Strava BridgeUITests */,
+				1EBF41B123FC696700CA569A /* Products */,
+				1EBF41E623FC6AA800CA569A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1EBF41B123FC696700CA569A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1EBF41B023FC696700CA569A /* Workout Strava Bridge.app */,
+				1EBF41C623FC696800CA569A /* Workout To Strava BridgeTests.xctest */,
+				1EBF41D123FC696800CA569A /* Workout To Strava BridgeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1EBF41B223FC696700CA569A /* Workout To Strava Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				1EBF41E523FC6AA800CA569A /* Workout To Strava Bridge.entitlements */,
+				1EBF41B323FC696700CA569A /* AppDelegate.swift */,
+				1EBF41B523FC696700CA569A /* SceneDelegate.swift */,
+				1E6B5ACE24099C2B00299DE6 /* Constants.swift */,
+				1EB53EC6241F746400E0E5AD /* MainViewController.swift */,
+				1EBF41B723FC696700CA569A /* ViewController.swift */,
+				1E5EF7A62434BBEF00E971AE /* SleepListController.swift */,
+				1EC4410724046460002F3444 /* ActivityUploadController.swift */,
+				1EBF41E323FC6A1C00CA569A /* HealthKitSetup.swift */,
+				1EBF41E923FC7F3E00CA569A /* WorkoutDataStore.swift */,
+				1EBD51AC240710A00056A254 /* Http.swift */,
+				1E1D82902435C987006BF711 /* Common.swift */,
+				1EBF41B923FC696700CA569A /* Main.storyboard */,
+				1E62C68B24059F5100B24EFF /* strava-done.png */,
+				1E62C68C24059F5100B24EFF /* strava-pending.png */,
+				1EBF41BC23FC696800CA569A /* Assets.xcassets */,
+				1E62C681240586D300B24EFF /* cycling-icon.png */,
+				1E62C682240586D300B24EFF /* other-icon.png */,
+				1E62C684240586D300B24EFF /* pool-swim-icon.png */,
+				1E62C67F240586D200B24EFF /* running-icon.png */,
+				1E62C683240586D300B24EFF /* walking-icon.png */,
+				1E62C680240586D200B24EFF /* yoga-icon.png */,
+				1EBF41BE23FC696800CA569A /* LaunchScreen.storyboard */,
+				1EBF41C123FC696800CA569A /* Info.plist */,
+			);
+			path = "Workout To Strava Bridge";
+			sourceTree = "<group>";
+		};
+		1EBF41C923FC696800CA569A /* Workout To Strava BridgeTests */ = {
+			isa = PBXGroup;
+			children = (
+				1EBF41CA23FC696800CA569A /* Workout_To_Strava_BridgeTests.swift */,
+				1EBF41CC23FC696800CA569A /* Info.plist */,
+			);
+			path = "Workout To Strava BridgeTests";
+			sourceTree = "<group>";
+		};
+		1EBF41D423FC696800CA569A /* Workout To Strava BridgeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1EBF41D523FC696800CA569A /* Workout_To_Strava_BridgeUITests.swift */,
+				1EBF41D723FC696800CA569A /* Info.plist */,
+			);
+			path = "Workout To Strava BridgeUITests";
+			sourceTree = "<group>";
+		};
+		1EBF41E623FC6AA800CA569A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1EBF41E723FC6AA800CA569A /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1EBF41AF23FC696700CA569A /* Workout To Strava Bridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EBF41DA23FC696800CA569A /* Build configuration list for PBXNativeTarget "Workout To Strava Bridge" */;
+			buildPhases = (
+				1EBF41AC23FC696700CA569A /* Sources */,
+				1EBF41AD23FC696700CA569A /* Frameworks */,
+				1EBF41AE23FC696700CA569A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Workout To Strava Bridge";
+			packageProductDependencies = (
+				1EBF41EC23FF226300CA569A /* CoreGPX */,
+			);
+			productName = "Workout To Strava Bridge";
+			productReference = 1EBF41B023FC696700CA569A /* Workout Strava Bridge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1EBF41C523FC696800CA569A /* Workout To Strava BridgeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EBF41DD23FC696800CA569A /* Build configuration list for PBXNativeTarget "Workout To Strava BridgeTests" */;
+			buildPhases = (
+				1EBF41C223FC696800CA569A /* Sources */,
+				1EBF41C323FC696800CA569A /* Frameworks */,
+				1EBF41C423FC696800CA569A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1EBF41C823FC696800CA569A /* PBXTargetDependency */,
+			);
+			name = "Workout To Strava BridgeTests";
+			productName = "Workout To Strava BridgeTests";
+			productReference = 1EBF41C623FC696800CA569A /* Workout To Strava BridgeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1EBF41D023FC696800CA569A /* Workout To Strava BridgeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EBF41E023FC696800CA569A /* Build configuration list for PBXNativeTarget "Workout To Strava BridgeUITests" */;
+			buildPhases = (
+				1EBF41CD23FC696800CA569A /* Sources */,
+				1EBF41CE23FC696800CA569A /* Frameworks */,
+				1EBF41CF23FC696800CA569A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1EBF41D323FC696800CA569A /* PBXTargetDependency */,
+			);
+			name = "Workout To Strava BridgeUITests";
+			productName = "Workout To Strava BridgeUITests";
+			productReference = 1EBF41D123FC696800CA569A /* Workout To Strava BridgeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1EBF41A823FC696700CA569A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Charles Johannisen";
+				TargetAttributes = {
+					1EBF41AF23FC696700CA569A = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					1EBF41C523FC696800CA569A = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 1EBF41AF23FC696700CA569A;
+					};
+					1EBF41D023FC696800CA569A = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 1EBF41AF23FC696700CA569A;
+					};
+				};
+			};
+			buildConfigurationList = 1EBF41AB23FC696700CA569A /* Build configuration list for PBXProject "Workout To Strava Bridge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1EBF41A723FC696700CA569A;
+			packageReferences = (
+				1EBF41EB23FF226300CA569A /* XCRemoteSwiftPackageReference "CoreGPX" */,
+			);
+			productRefGroup = 1EBF41B123FC696700CA569A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1EBF41AF23FC696700CA569A /* Workout To Strava Bridge */,
+				1EBF41C523FC696800CA569A /* Workout To Strava BridgeTests */,
+				1EBF41D023FC696800CA569A /* Workout To Strava BridgeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1EBF41AE23FC696700CA569A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E62C687240586D300B24EFF /* cycling-icon.png in Resources */,
+				1EBF41C023FC696800CA569A /* LaunchScreen.storyboard in Resources */,
+				1E62C68D24059F5100B24EFF /* strava-done.png in Resources */,
+				1E62C688240586D300B24EFF /* other-icon.png in Resources */,
+				1EBF41BD23FC696800CA569A /* Assets.xcassets in Resources */,
+				1E62C68A240586D300B24EFF /* pool-swim-icon.png in Resources */,
+				1E62C685240586D300B24EFF /* running-icon.png in Resources */,
+				1E62C68E24059F5100B24EFF /* strava-pending.png in Resources */,
+				1E62C686240586D300B24EFF /* yoga-icon.png in Resources */,
+				1E62C689240586D300B24EFF /* walking-icon.png in Resources */,
+				1EBF41BB23FC696700CA569A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EBF41C423FC696800CA569A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EBF41CF23FC696800CA569A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1EBF41AC23FC696700CA569A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EBF41E423FC6A1C00CA569A /* HealthKitSetup.swift in Sources */,
+				1E5EF7A72434BBEF00E971AE /* SleepListController.swift in Sources */,
+				1EBF41B823FC696700CA569A /* ViewController.swift in Sources */,
+				1EBF41EA23FC7F3E00CA569A /* WorkoutDataStore.swift in Sources */,
+				1E1D82912435C987006BF711 /* Common.swift in Sources */,
+				1EBF41B423FC696700CA569A /* AppDelegate.swift in Sources */,
+				1EB53EC7241F746400E0E5AD /* MainViewController.swift in Sources */,
+				1EBF41B623FC696700CA569A /* SceneDelegate.swift in Sources */,
+				1EC4410824046460002F3444 /* ActivityUploadController.swift in Sources */,
+				1EBD51AD240710A00056A254 /* Http.swift in Sources */,
+				1E6B5ACF24099C2B00299DE6 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EBF41C223FC696800CA569A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EBF41CB23FC696800CA569A /* Workout_To_Strava_BridgeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EBF41CD23FC696800CA569A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EBF41D623FC696800CA569A /* Workout_To_Strava_BridgeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1EBF41C823FC696800CA569A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EBF41AF23FC696700CA569A /* Workout To Strava Bridge */;
+			targetProxy = 1EBF41C723FC696800CA569A /* PBXContainerItemProxy */;
+		};
+		1EBF41D323FC696800CA569A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EBF41AF23FC696700CA569A /* Workout To Strava Bridge */;
+			targetProxy = 1EBF41D223FC696800CA569A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1EBF41B923FC696700CA569A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1EBF41BA23FC696700CA569A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1EBF41BE23FC696800CA569A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1EBF41BF23FC696800CA569A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1EBF41D823FC696800CA569A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1EBF41D923FC696800CA569A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1EBF41DB23FC696800CA569A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Workout To Strava Bridge/Workout To Strava Bridge.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M8W7V27F4Q;
+				INFOPLIST_FILE = "Workout To Strava Bridge/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = spctr.workout.strava.bridge;
+				PRODUCT_NAME = "Workout Strava Bridge";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1EBF41DC23FC696800CA569A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Workout To Strava Bridge/Workout To Strava Bridge.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M8W7V27F4Q;
+				INFOPLIST_FILE = "Workout To Strava Bridge/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = spctr.workout.strava.bridge;
+				PRODUCT_NAME = "Workout Strava Bridge";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		1EBF41DE23FC696800CA569A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M8W7V27F4Q;
+				INFOPLIST_FILE = "Workout To Strava BridgeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "spctr.Workout-To-Strava-BridgeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Workout To Strava Bridge.app/Workout To Strava Bridge";
+			};
+			name = Debug;
+		};
+		1EBF41DF23FC696800CA569A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M8W7V27F4Q;
+				INFOPLIST_FILE = "Workout To Strava BridgeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "spctr.Workout-To-Strava-BridgeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Workout To Strava Bridge.app/Workout To Strava Bridge";
+			};
+			name = Release;
+		};
+		1EBF41E123FC696800CA569A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M8W7V27F4Q;
+				INFOPLIST_FILE = "Workout To Strava BridgeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "spctr.Workout-To-Strava-BridgeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Workout To Strava Bridge";
+			};
+			name = Debug;
+		};
+		1EBF41E223FC696800CA569A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M8W7V27F4Q;
+				INFOPLIST_FILE = "Workout To Strava BridgeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "spctr.Workout-To-Strava-BridgeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Workout To Strava Bridge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1EBF41AB23FC696700CA569A /* Build configuration list for PBXProject "Workout To Strava Bridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EBF41D823FC696800CA569A /* Debug */,
+				1EBF41D923FC696800CA569A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EBF41DA23FC696800CA569A /* Build configuration list for PBXNativeTarget "Workout To Strava Bridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EBF41DB23FC696800CA569A /* Debug */,
+				1EBF41DC23FC696800CA569A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EBF41DD23FC696800CA569A /* Build configuration list for PBXNativeTarget "Workout To Strava BridgeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EBF41DE23FC696800CA569A /* Debug */,
+				1EBF41DF23FC696800CA569A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EBF41E023FC696800CA569A /* Build configuration list for PBXNativeTarget "Workout To Strava BridgeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EBF41E123FC696800CA569A /* Debug */,
+				1EBF41E223FC696800CA569A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1EBF41EB23FF226300CA569A /* XCRemoteSwiftPackageReference "CoreGPX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vincentneo/CoreGPX";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1EBF41EC23FF226300CA569A /* CoreGPX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1EBF41EB23FF226300CA569A /* XCRemoteSwiftPackageReference "CoreGPX" */;
+			productName = CoreGPX;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 1EBF41A823FC696700CA569A /* Project object */;
+}
