@@ -7,3 +7,5 @@ It applies if:
 - and also use Strava and want to upload your activity to Strava
 
 Using the Strava app on your watch will get you the minimum amount of points, because the Strava app is considered a third-party app.
+
+The code is written for iPhone 6.
